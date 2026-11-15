@@ -1,1 +1,2 @@
 Welcome to Banking Application
+Version 2.0 - Online Banking
