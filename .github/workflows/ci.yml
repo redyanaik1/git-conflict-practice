@@ -29,3 +29,8 @@ jobs:
       # Step 5: Display project files
       - name: List project files
         run: ls -la
+
+
+      # Step 6: Check application file
+      - name: Check application file
+        run: test -f app.txt     
