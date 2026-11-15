@@ -43,3 +43,10 @@ jobs:
     steps:
       - name: Display build message
         run: echo "Building my banking application..."
+  deploy-job:
+    needs: build-job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display deployment message
+        run: echo "Deploying my banking application..."
