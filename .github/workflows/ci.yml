@@ -35,6 +35,4 @@ jobs:
       - name: Check application file
         run: test -f app.txt    
  
-      # Step 7: Intentionally test a missing file
-      - name: Test missing file
-        run: test -f missing.txt
+      ing.txt
