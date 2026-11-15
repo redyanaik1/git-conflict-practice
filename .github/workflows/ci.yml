@@ -36,3 +36,9 @@ jobs:
         run: test -f app.txt    
  
      
+  build-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display build message
+        run: echo "Building my banking application..."
