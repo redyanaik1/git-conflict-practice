@@ -10,11 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Download repository source code
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      # Step 2: Display welcome message
       - name: Display welcome message
         run: echo "Hello! My first GitHub Actions pipeline is working."
 
+      # Step 3: Check Git version
       - name: Check Git version
         run: git --version
 
+      # Step 4: Display current date
       - name: Display current date
         run: date
+
+      # Step 5: Display project files
+      - name: List project files
+        run: ls -la
